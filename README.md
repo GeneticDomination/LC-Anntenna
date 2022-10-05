@@ -6,7 +6,7 @@ Things to Add to the current software
 2. ADD a State Machine
 3. Make test cases
 
-State Machine Order
+State Machine Order \n
 State 0: Idle 
 State 1: Deploy_A
 State 2: Deploy_B
