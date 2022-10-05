@@ -9,8 +9,11 @@ Things to Add to the current software
 State Machine Order
 
 State 0: Idle 
+
 State 1: Deploy_A
+
 State 2: Deploy_B
+
 State 3: CheckBurn
 
 
