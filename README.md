@@ -1,4 +1,4 @@
-# LC-Anntenna
+# LC-Antenna
 For the purpose of keeping the Anntenna board Software somewhere else.
 
 Things to Add to the current software
