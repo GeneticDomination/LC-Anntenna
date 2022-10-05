@@ -1,12 +1,13 @@
-//anntenna software con ops
-//purpose is to deploy the annetnnas one and to ensure they are deployed properly
-//Programmer: Genevieve Cooper, Jaime Dela Vega, Christopher McCormick
-//date 10/5/2022
+/*Antenna software con ops
+Purpose is to deploy the anetnnas once and ensure deployment
+Programmer: Genevieve Cooper, Jaime Dela Vega, Christopher McCormick
+date 10/5/2022
+*/
 
 //TODO
-//Change Pin Names
-//Make into state machine
+//Make into state machine - maybe not
 //Add testing cases (using #ifdef)
+
 void setup()
 {
   
@@ -34,7 +35,7 @@ void loop()
   }
 bool deployA()
 {
-  //deplays A doors
+  /*deploys A doors
   //want to deploy sequencially
   //each burn resistor should be on for 3 seconds
   //turn anntenna 1 burn resistor on for 3 seconds
@@ -42,8 +43,7 @@ bool deployA()
   //turn anntenna 2 burn resistor on for for 3 seconds
   //wait 5 seconds , do anntenna 3 wait, anntenna 4 wait
   //if 4 feedback swithch is high
-  //then depolyed is true
-  //if d3 (deployA) then d11 turn high.
+  //then deployed is true */
   int y = 0, Timer = millis(), D11 = 11;
           if (millis() - Timer >= 5000 && y <= 7) // 5 second break
   {
@@ -65,7 +65,7 @@ bool deployB()
   int Timer = millis();
   if (millis() - Timer >= 5000 && y <= 7) // 5 second break
   {
-    Burn(12 - y); //not sure if this will work, trying to change the pin that is needed
+    Burn(12 - y); //change used pin that is needed
     y += 2;
     Timer = millis(); //reset timer
   }
